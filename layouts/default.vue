@@ -2,7 +2,7 @@
   <v-app>
     <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
+      mini-variant
       clipped
       fixed
       app
@@ -34,12 +34,6 @@
       color="deep-purple darken-1"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title" />
     </v-app-bar>
     <v-content>
@@ -77,9 +71,13 @@ export default {
           icon: 'mdi-account-details-outline',
           title: 'Список учеников',
           to: '/students'
+        },
+        {
+          icon: 'mdi-account-details-outline',
+          title: 'Карточки',
+          to: '/cards'
         }
       ],
-      miniVariant: true,
       title: 'Компьютерная долина'
     }
   },

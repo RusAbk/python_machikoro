@@ -2,8 +2,14 @@
   <div>
     <h1 class="my-6">Настройка команд</h1>
     <v-row>
-      <v-col cols="12" sm="6" md="4" lg="3">
+      <v-col cols="12" sm="6" md="4" lg="3" class="d-flex align-center">
         <v-text-field label="Кол-во команд" @change="setTeamsCount" v-model="teamsCount"></v-text-field>
+        <v-btn fab x-small color="red" outlined class="ml-2" @click="teamsCount > 1 ? setTeamsCount(--teamsCount) : ''">
+          <v-icon>mdi-minus</v-icon>
+        </v-btn>
+        <v-btn fab x-small color="green" outlined class="ml-1" @click="setTeamsCount(++teamsCount)">
+          <v-icon>mdi-plus</v-icon>
+        </v-btn>
       </v-col>
     </v-row>
     <v-row>

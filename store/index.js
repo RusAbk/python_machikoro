@@ -24,37 +24,58 @@ const store = () => new Vuex.Store({
     ],
     cards: [
       {
+        title: 'Поле солнечных панелей',
+        icon: '🌅',
         win: [1],
+        winTrigger: 'all',
         profit: 1,
         price: 1
       },
       {
+        title: 'Ферма биткоинов',
+        icon: '₿',
         win: [2],
+        winTrigger: 'all',
         profit: 1,
         price: 1
       },
       {
+        title: 'Столовая',
+        icon: '🍝',
         win: [2, 3],
+        winTrigger: 'self',
         profit: 1,
         price: 1
       },
       {
+        title: 'Столовая',
+        icon: '🍹',
         win: [3],
+        winTrigger: 'other',
         profit: 1,
         price: 2
       },
       {
+        title: 'Полигон для роботов',
+        icon: '🤖',
         win: [4],
+        winTrigger: 'self',
         profit: 3,
         price: 2
       },
       {
+        title: 'Производственный цех',
+        icon: '🏭',
         win: [5],
+        winTrigger: 'all',
         profit: 2,
         price: 4
       },
       {
+        title: 'Склад инновационных материалов',
+        icon: '💎',
         win: [6],
+        winTrigger: 'other',
         profit: 1,
         price: 5
       }
