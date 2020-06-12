@@ -64,14 +64,19 @@ export default {
       drawer: false,
       items: [
         {
+          icon: 'mdi-play-outline',
+          title: 'Игра',
+          to: '/play'
+        },
+        {
           icon: 'mdi-cog-outline',
           title: 'Настройки команд',
           to: '/'
         },
         {
-          icon: 'mdi-play-outline',
-          title: 'Игра',
-          to: '/play'
+          icon: 'mdi-account-details-outline',
+          title: 'Список учеников',
+          to: '/students'
         }
       ],
       miniVariant: true,

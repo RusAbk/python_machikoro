@@ -7,6 +7,7 @@ const store = () => new Vuex.Store({
 
   state: {
     teamsCount: 1,
+    studentList:[],
     teams: [
       {
         name: 'Инста-килограмм',
@@ -14,7 +15,7 @@ const store = () => new Vuex.Store({
         cash: 3,
         cards: [1, 3, 6],
         list: [{
-          name:'',
+          name: '',
           steps: 0,
           done: 0
         }],
@@ -74,7 +75,7 @@ const store = () => new Vuex.Store({
             cash: 3,
             cards: [],
             list: [{
-              name:'',
+              name: '',
               steps: 0,
               done: 0
             }],
