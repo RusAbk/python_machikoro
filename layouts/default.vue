@@ -66,12 +66,12 @@ export default {
         {
           icon: 'mdi-play-outline',
           title: 'Игра',
-          to: '/play'
+          to: '/'
         },
         {
-          icon: 'mdi-cog-outline',
-          title: 'Настройки команд',
-          to: '/'
+          icon: 'mdi-account-supervisor',
+          title: 'Команды',
+          to: '/teams'
         },
         {
           icon: 'mdi-account-details-outline',
