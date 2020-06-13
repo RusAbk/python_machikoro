@@ -10,8 +10,8 @@ const store = () => new Vuex.Store({
     studentList:[],
     teams: [
       {
-        name: 'Инста-килограмм',
-        logo: 'https://avatars.mds.yandex.net/get-zen_doc/1707291/pub_5dea15533d873600aeef0b78_5dea15cf78125e00ae3c3ad0/scale_1200',
+        name: 'Лицо-книга инкорпорейтед',
+        logo: 'http://placeimg.com/640/320/arch',
         cash: 3,
         cards: [1, 3, 6],
         list: [{
@@ -92,7 +92,7 @@ const store = () => new Vuex.Store({
         for (let i = 0; i < newCount - oldCount; i++) {
           let newTeam = {
             name: 'Супер корпорация',
-            logo: 'https://avatars.mds.yandex.net/get-zen_doc/1707291/pub_5dea15533d873600aeef0b78_5dea15cf78125e00ae3c3ad0/scale_1200',
+            logo: 'http://placeimg.com/640/320/arch?salt=' + Math.random(),
             cash: 3,
             cards: [],
             list: [{
