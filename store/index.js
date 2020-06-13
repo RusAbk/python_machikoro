@@ -10,7 +10,7 @@ const store = () => new Vuex.Store({
     studentList:[],
     teams: [
       {
-        name: 'Лицо-книга инкорпорейтед',
+        name: 'Супер корпорация',
         logo: 'http://placeimg.com/640/320/arch',
         cash: 3,
         cards: [1, 3, 6],

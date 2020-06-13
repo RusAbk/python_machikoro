@@ -63,19 +63,19 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-account-supervisor',
+          icon: 'mdi-account-group-outline',
           title: 'Команды',
           to: '/teams'
+        },
+        {
+          icon: 'mdi-store-outline',
+          title: 'Карточки',
+          to: '/cards'
         },
         {
           icon: 'mdi-account-details-outline',
           title: 'Список учеников',
           to: '/students'
-        },
-        {
-          icon: 'mdi-account-details-outline',
-          title: 'Карточки',
-          to: '/cards'
         }
       ],
       title: 'Компьютерная долина'
