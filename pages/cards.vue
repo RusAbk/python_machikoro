@@ -3,7 +3,7 @@
     <h1 class="my-6">Карточки объектов</h1>
     <p>Здесь Вы можете настроить игровые объекты, которые можно будет покупать по ходу игры</p>
     <v-row>
-      <v-col cols="12" sm="3" v-for="(item, i) in $store.state.cards" :key="i">
+      <v-col cols="12" sm="6" md="4" lg="3" v-for="(item, i) in $store.state.cards" :key="i">
         <v-card :color="getCardColor(item.winTrigger)">
           <v-card-text>
             <h2 class="text-center mb-4" style="font-size: 50px;line-height:1.1;">{{item.icon}}</h2>
@@ -32,11 +32,10 @@
               </v-col>
             </v-row>
 
-            <strong class="mt-6 mb-0">
+            <strong class="mt-10 mb-0">
               Победные ходы
-              <v-btn x-small fab color="green" outlined @click="item.win.push(1)">
-                <v-icon>mdi-plus</v-icon>
-              </v-btn>
+              <v-btn x-small fab color="red" outlined @click="item.win.length > 1 ? item.win.pop() : ''"><v-icon>mdi-minus</v-icon></v-btn>
+              <v-btn x-small fab color="green" outlined @click="item.win.push(0)"><v-icon>mdi-plus</v-icon></v-btn>
             </strong>
 
             <v-row>
