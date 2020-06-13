@@ -12,7 +12,7 @@
           >
             <v-overlay absolute opacity="0.7" class="white--text align-end justify-start">
               <v-card-title>
-                <h2>{{item.name}}</h2>
+                {{item.name}}
               </v-card-title>
               <v-chip class="mx-4 mb-4" color="orange" text-color="white">
                 <v-avatar left class="orange darken-4">{{item.cash}}</v-avatar>$
