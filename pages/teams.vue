@@ -16,7 +16,7 @@
       <v-col v-for="(item, i) in $store.state.teams" :key="i" cols="12" sm="4">
         <v-card>
           <v-img
-            height="150px"
+            height="120px"
             :src="item.logo || 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'"
           >
             <v-overlay absolute opacity="0.7" class="white--text align-end justify-start">
