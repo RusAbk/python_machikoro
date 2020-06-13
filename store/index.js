@@ -48,7 +48,7 @@ const store = () => new Vuex.Store({
         price: 1
       },
       {
-        title: 'Столовая',
+        title: 'Модное кафе',
         icon: '🍹',
         win: [3],
         winTrigger: 'other',
